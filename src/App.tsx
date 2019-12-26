@@ -1,10 +1,22 @@
 import React from 'react';
+
+import Header from './components/header/index';
+
 import logo from './logo.svg';
 import './App.css';
+
+let aa = {
+  logo: 'string',
+  bar:['11']
+};
 
 const App: React.FC = () => {
   return (
     <div className="App">
+      <Header
+        logo="测试ts"
+        bar={aa.bar}
+      />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
